@@ -11,3 +11,18 @@ $(function(){
             }
     });
 });
+
+window.onscroll = function() {rounerScroll()};
+
+var header = document.getElementById("stickyTypeHeader");
+
+var sticky = header.offsetTop;
+
+/*function myFunction() {
+        if (window.pageYOffset > sticky) {
+                header.style.position == ;
+        } 
+        else {
+                header.classList.remove("sticky");
+        }
+}*/
