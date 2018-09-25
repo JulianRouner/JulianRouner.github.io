@@ -5,24 +5,25 @@ $(function(){
             if( $(window).scrollTop() > stickyHeaderTop ) {
                     $('#stickytypeheader').css({position: 'fixed', top: '0px'});
                     //$('#sticky').css('display', 'block');
-            } else {
+            }
+            else {
                     $('#stickytypeheader').css({position: 'static', top: '0px'});
                     //$('#sticky').css('display', 'none');
             }
     });
 });
 
-window.onscroll = function() {rounerScroll()};
+window.onscroll = function() {stiq()};
 
 var header = document.getElementById("stickyTypeHeader");
 
-var sticky = header.offsetTop;
+var sticky = header;
 
-/*function myFunction() {
+function stiq () {
         if (window.pageYOffset > sticky) {
-                header.style.position == ;
-        } 
+                header.classList.add("sticky")
+        }
         else {
                 header.classList.remove("sticky");
         }
-}*/
+}
